@@ -1,0 +1,151 @@
+1.- ¿Cómo indicaría que en la IP 128.121.X.Y se utilizan dos bytes para identificar a la subred?
+
+128.121.X.Y/16
+
+
+2.- Si en una subred se usan 6 bits para el ID-net, ¿Cuál es la máscara de subred?, expresada en formato decimal con puntos
+y en base hexadecimal.
+
+BINARIO: 11111100 00000000 00000000 00000000 
+DECIMAL: 252.0.0.0 
+HEXADECIMAL: FC000000
+
+
+3.- Si tenemos un esquema de subredes con máscara de subred de 25 bits2. ¿Cuál será su máscara de subred, en formato
+decimal con puntos?, ¿cuántas subredes podemos configurar con esa máscara?, ¿cuántos nodos podrán existir en cada
+una de las subredes?
+Para aquel subconjunto de subredes que tuvieran a cero (0) el bit de menor peso del ID-net, cuál sería el byte de la derecha,
+en el formato decimal con puntos, de la dirección de broadcast de subred.
+
+BINARIO: 11111111.11111111.11111111.10000000 DECIMAL: 255.255.255.128
+Poderemos configurar 2^25 subredes con 2^7-2 (126) nodos
+Tendo o bit de menor peso do ID-net a 0 sería X.Y.Z.127
+
+
+4.- Sea la dirección 182.5.10.4/16. ¿A cuál de las antiguas clases pertenece?, ¿a qué subred corresponde?, ¿cuál es su
+máscara de subred, en formato decimal con puntos?, ¿a qué nodo corresponde?, ¿cuál será la dirección de broadcast de
+subred?
+
+Pertence á clase B (10...)
+Dirección de subrede 182.5.0.0 
+Máscara de subrede 255.255.0.0
+Nodo 10.4
+Dirección de broadcast 182.5.255.255
+
+
+5.- Sea la dirección 64.8.10.4/8. ¿A cuál de las antiguas clases pertenece?, ¿a qué subred corresponde?, ¿cuál es su máscara
+de subred, en formato decimal con puntos?, ¿a qué nodo corresponde?, ¿cuál será la dirección de broadcast de subred?
+
+Pertencería á clase A
+Subrede 64.0.0.0
+Máscara de subrede 255.0.0.0
+Nodo 8.10.4
+Dirección de broadcast 64.255.255.255
+
+
+6.- Sea la dirección 192.7.8.42/27. ¿A cuál de las antiguas clases podría asimilarse?, ¿a qué subred corresponde?, ¿a qué
+nodo de la subred identifica?, ¿cuántos nodos puede haber en esa subred?, ¿cuál es su máscara de subred en formato
+decimal con puntos?, ¿cuál será la dirección de broadcast de esa subred? ¿Es una subred privada?
+
+Tradución a binario 11000000 00000111 00001000 00101010
+Pertencería á clase C (110...) 
+Subrede 192.7.8.32
+Nodo 10
+Pode haber 30 nodos
+Máscara de rede 255.255.255.224
+Broadcast 192.7.8.63
+Dirección pública
+
+
+
+7.- Sabiendo que a la IP binaria 11100110 10100011 10101000 00110111, le corresponde una máscara FFF00000 hexadecimal.
+Expresar, en formato decimal con puntos, el identificador de la subred y la IP correspondiente a la dirección de broadcast
+de la misma.
+
+Máscara en binario: 11111111 11110000 000000000 00000000
+Máscara en decimal: 255.160.0.0
+
+Ip Decimal: 230.163.168.55
+
+Subred en binario: 11100110 10100000 00000000 00000000
+Subred decimal: 230.160.0.0
+Broadcast: 230.175.255.255
+
+
+8.- En una subred se utilizan 14 bits para el ID-net, ¿cuál sería la máscara de la subred en notación decimal con puntos?,
+¿cuántos nodos podrían existir en esa subred?
+
+Subred en binario: 11111111 11111100 00000000 00000000
+Decimal con puntos: 255.252.0.0
+Podrán existir 2^18-2 nodos
+
+
+9.- Sea la dirección 194.6.5.129/26. ¿Es una dirección de subred, de nodo o de broadcast de subred?
+
+Dirección: 11000010 00000110 00000101 10000001
+Máscara: 11111111 11111111 11111111 11000000
+
+255.255.255.192
+
+É de nodo
+
+
+
+10.- Sea la dirección 192.168.3.128/26. ¿Es una dirección de subred, de nodo o de broadcast de subred? ¿Es una subred
+privada?
+
+Dirección: 11000000 10101000 0000011 10000000
+Máscara: 11111111 1111111 11111111 11000000
+
+É de rede (privada)
+
+
+
+11.- Sea la dirección 172.27.255.255/13. ¿Es una dirección de subred, de nodo o de broadcast de subred? ¿Es una subred
+privada?
+
+Dirección: 10101100 00011011 11111111 11111111
+Máscara: 11111111 11111000 00000000 00000000
+
+É de nodo (privada)
+
+
+12.- Con una máscara de subred 255.255.255.240. ¿Cuál es el número máximo de nodos en cada subred?
+
+Máscara: 11111111 11111111 1111111 11110000
+Número de nodos posibles: 16-2= 14
+
+
+13.- Cuál es el rango de las direcciones IP que pertenecen a la subred correspondiente a la dirección IP 140.220.15.165 con
+máscara 255.255.255.240.
+
+Subrede: 140.220.15.160
+Rango: 140.220.15.161 ata 140.220.15.174
+
+
+14.- En una empresa necesitan manejar 13 subredes públicas diferentes, ¿cuántos bits a uno (1) necesitará, como mínimo, la
+máscara de subred?, ¿cuál será esa máscara de subred, en formato decimal con puntos?, ¿cuál será el identificador de
+cada subred (ID-net)?, ¿cuál será la dirección de cada subred?, ¿qué rango de IP corresponderá a cada una de las
+subredes?, ¿cuál será la dirección de broadcast de cada subred?, ¿cuántos nodos podría tener cada subred?, ¿cuántos
+nodos, en total, podrían tener las 13 subredes?
+
+Máscara: 11110000 000000000 000000000 000000000
+Máscara en decimal: 240.0.0.0
+
+ID-net: 240
+Dirección de cada subred:
+
+Rango IPs:
+
+Broadcast:
+
+Nodos por red: 
+
+Nodos totales posibles: 2^28-2
+
+
+
+
+
+
+
