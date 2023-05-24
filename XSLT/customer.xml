@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="customer.xsd"?>
+<customer id="1234">
+    <name>
+        <first>Julio</first>
+        <middle>Llesterday</middle>
+        <last>Acuña</last>
+    </name>
+    <address>
+        <street>O Quinto Pino, 123</street>
+        <city>O Pino</city>
+        <state>Galiza</state>
+        <country>Spain</country>
+        <postalcode>12345</postalcode>
+    </address>
+</customer>

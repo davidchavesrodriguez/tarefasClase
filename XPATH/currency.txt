@@ -1,0 +1,48 @@
+<listing>
+    <account>
+        <holder ID="5671001D">Ramon Mariño</holder>
+        <currentbalance currency="euros">12000</currentbalance>
+        <creationdate>April 13, 2022</creationdate>
+    </account>
+    <money>
+        <associatedaccount>20-A</associatedaccount>
+        <data>
+            <depositedamount>20000</depositedamount>
+            <currency>Euros</currency>
+        </data>
+    </money>
+    <money>
+        <associatedaccount>21-DX</associatedaccount>
+        <data>
+            <depositedamount>4800</depositedamount>
+            <currency>Dollars</currency>
+        </data>
+    </money>
+    <account>
+        <holder ID="39812341C">Carmen Diaz</holder>
+        <currentbalance currency="euros">1900</currentbalance>
+        <creationdate>15-February-2011</creationdate>
+    </account>
+</listing>
+
+
+
+
+*Obtain the amount deposited in account 20-A.*
+listing/money[associatedaccount="20-A"]/data/depositedamount
+
+
+*Extract an unlabelled list of all currencies used by the different funds.*
+listing/money/data/currency/text()
+
+
+*Extract DNI from accounts using euros as the base currency.*
+listing/account[currentbalance[@currency="euros"]]/holder/@ID
+
+
+*Extract all information from funds using "euro" with a value of less than 2500 euros.*
+listing/money[data/depositedamount>2500 and data/currency="Euros"]
+
+
+
+

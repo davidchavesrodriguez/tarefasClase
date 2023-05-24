@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teaches>
+    <teaches-tuple course="LMSXI" lecturer="Noemí Varela"/>
+    <teaches-tuple course="CD" lecturer="Sabela Sobrino"/>
+    <teaches-tuple course="PROG" lecturer="Pepe Calo"/>
+  </teaches>

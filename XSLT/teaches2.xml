@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teaches>
+   <teaches-tuple>
+      <course>LMSXI</course>
+      <lecturer>Noemí Varela</lecturer>
+   </teaches-tuple>
+   <teaches-tuple>
+      <course>CD</course>
+      <lecturer>Sabela Sobrino</lecturer>
+   </teaches-tuple>
+   <teaches-tuple>
+      <course>PROG</course>
+      <lecturer>Pepe Calo</lecturer>
+   </teaches-tuple>
+</teaches>

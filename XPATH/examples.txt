@@ -1,0 +1,59 @@
+<inventory>
+    <product code="AAA-111">
+        <name>Keyboard</name>
+        <weight unit="g">480</weight>
+    </product>
+    <product code="ACD-981">
+        <name>Monitor</name>
+        <weight unit="kg">1.8</weight>
+    </product>
+    <product code="DEZ-138">
+        <name>Mouse</name>
+        <weight unit="g">50</weight>
+    </product>
+</inventory>
+
+
+
+
+*Extract all weight elements (tags included).*
+//weight
+/inventory/product/weight
+
+
+*Extract the quantities of all weight elements (without the weight tag).*
+//weight/text()
+/inventory/product/weight/text()
+
+
+*Extract the weight of the last element.*
+inventory/product[last()]/weight
+
+
+*Extract the different units in which the weights have been stored.*
+inventory/product/weight/attribute()
+inventory/product/weight/@unit
+
+
+*Extract the penultimate code.*
+inventory/product[last()-1]/@code
+
+
+*Extract the weight of the element whose code is AAA-111.*
+/inventory/product[@code="AAA-111"]/weight
+
+
+*Extract the name of the product that have their weight in grams.*
+/inventory/product[weight/@unit="g"]/name/text()
+
+
+*Extract the code of the products whose name is "Monitor".*
+inventory/product[name="Monitor"]/@code
+
+
+*Extract the code of the products whose weight is more than a quarter of a kilo.*
+inventory/product[(weight>250 and weight/@unit="g") or (weight>0.25 and weight/@unit="kg")]/@code
+
+
+
+
